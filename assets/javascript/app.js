@@ -49,7 +49,7 @@ database.ref().on("child_added", function(childSnapshot) {
   var splitCurrent = currentTime.split(":");
   var newCurrentTime = (parseInt(splitCurrent[0])*60) + parseInt(splitCurrent[1]);
   var dif = newCurrentTime - newtime;
-  var freq = 50;
+  var freq = parseInt(childSnapshot.val().frequencyMin);
   var roundup = Math.ceil(dif/freq);
   var numTrain = dif/freq;
   var nextTrain = newtime +(roundup*freq);
