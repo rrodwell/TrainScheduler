@@ -53,7 +53,7 @@ database.ref().on("child_added", function(childSnapshot) {
   var roundup = Math.ceil(dif/freq);
   var numTrain = dif/freq;
   var nextTrain = newtime +(roundup*freq);
-  var timeLeft = Math.round((roundup - numTrain)*50);
+  var timeLeft = Math.round((roundup - numTrain)*freq);
   var minNextTrain = nextTrain % 60;
   var hrNextTrain = nextTrain/60;
   var nextArrival = moment.utc().hours(hrNextTrain).minutes(minNextTrain).format("HH:mm");
