@@ -10,6 +10,10 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!-- Latest compiled Bootstraap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- Firebase -->
+		<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+		<!-- Moment JS -->
+		<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -52,15 +56,15 @@
 												<input type="text" class="form-control" id="name-train">
 										</div>
 										<div class="form-group">
-												<label for="role">Destination</label>
+												<label for="destination">Destination</label>
 												<input type="text" class="form-control" id="destination">
 										</div>
 										<div class="form-group">
-												<label for="start-date">First Train Time (HH:mm - military time)</label>
+												<label for="first-train">First Train Time (HH:mm - military time)</label>
 												<input type="text" class="form-control" id="first-train">
 										</div>
 										<div class="form-group">
-												<label for="montly-rate">Frequency (min)</label>
+												<label for="frequency">Frequency (min)</label>
 												<input type="text" class="form-control" id="frequency">
 										</div>
 										<button type="button" class="btn btn-success" id="submit-btn">Submit</button>
@@ -68,6 +72,7 @@
 						</div>
 				</div>
 		</div>
+
 
 		<!-- JavaScript -->
 		<script type="text/javascript" src="assets/javascript/app.js"></script>
